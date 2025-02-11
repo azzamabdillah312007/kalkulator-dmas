@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Terkeren</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="theme-switch">
+      <button id="themeToggle">🌙</button>
+    </div>
+    <div class="display">
+      <input type="text" id="result" readonly placeholder="0">
+    </div>
+    <div class="buttons">
+      <button data-key="C" class="clear">C</button>
+      <button data-key="/" class="operator">÷</button>
+      <button data-key="*" class="operator">×</button>
+      <button data-key="-" class="operator">−</button>
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="+">+</button>
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="0" class="zero">0</button>
+      <button data-key=".">.</button>
+      <button data-key="=" class="equals">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

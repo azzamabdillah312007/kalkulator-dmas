@@ -1,0 +1,117 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #1e1e2e;
+  color: #e4e4e7;
+}
+
+.calculator {
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+body.dark .calculator {
+  background-color: #27293d;
+}
+
+.theme-switch {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+.theme-switch button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.display {
+  padding: 20px;
+  text-align: right;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark .display {
+  background-color: #1f2235;
+}
+
+.display input {
+  width: 100%;
+  font-size: 32px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.buttons button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0e7ff;
+  color: #1e293b;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+body.dark .buttons button {
+  background-color: #2c2f48;
+  color: #e4e4e7;
+}
+
+.buttons button.operator {
+  background-color: #c7d2fe;
+}
+
+body.dark .buttons button.operator {
+  background-color: #444761;
+}
+
+.buttons button.equals {
+  background-color: #6366f1;
+  color: #ffffff;
+  grid-column: span 2;
+}
+
+body.dark .buttons button.equals {
+  background-color: #4f46e5;
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.buttons button:hover {
+  background-color: #dbeafe;
+}
+
+body.dark .buttons button:hover {
+  background-color: #39415a;
+}
